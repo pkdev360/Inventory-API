@@ -57,10 +57,6 @@ def db_collections():
 def add_item(inventory: Inventory):
     collection = store.inventory
 
-    # Working
-    # collection.insert_one({'testing': 'Amazing'})
-
-    # Working with ".dict()"
     collection.insert_one(inventory.dict())
     return {"Data": f"Book: '{inventory.book_name}' successfully added into the database."}
 
