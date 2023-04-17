@@ -1,4 +1,4 @@
-from fastapi import FastAPI, Query
+from fastapi import FastAPI
 from pymongo import MongoClient
 from dotenv import load_dotenv, find_dotenv
 import os
